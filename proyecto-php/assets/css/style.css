@@ -1,0 +1,251 @@
+/*FUENTES*/
+@font-face{
+    font-family: "fajala";
+    src:url(../fonts/fuente.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*GENERALES*/
+*{
+    margin: 0px; /*borra todos los margenes*/
+    padding: 0px;
+    font-family: sans-serif, Helvetica, Arial;
+    text-decoration: none;
+}
+/*Limpia los flotados*/
+.clearfix{
+    clear: both;
+    float: none;
+}
+body{
+    background: url(../img/cubes.png)#F4F4F4;  
+    background-attachment: fixed;
+}
+/*CABECERA*/
+#cabecera{
+    width: 94%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto;
+    /*border: 1px solid black;*/
+}
+
+/*LOGOTIPO*/
+#logo{
+    float: left;
+    width: 540px;
+    height: 110px;
+}
+
+#logo a{
+    font-family: "fajala",Helvetica;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #2979CD;
+    text-shadow:0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+    transition: all 300ms;
+    line-height: 100px;
+    margin-left: 10px;
+}
+
+#logo a:hover{
+    cursor: pointer;
+    text-shadow:0px 0px 0px black, -1px -1px 0px black, -2px -2px 0px black;
+}
+/*MENU*/
+#menu{
+    clear: both;
+    width: 101%;
+    height: 45px;
+    background: linear-gradient(to bottom,#f9f9f9 0px, #e9e9e9 100%);
+    border: 1px solid #C9C9C9;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px #ccc;
+    overflow: hidden;
+}
+#menu ul{
+    list-style: none;
+}
+#menu ul li{
+    float: left;
+    line-height: 45px;
+    border-right: 2px solid #D6D6D6;
+}
+#menu ul li a:hover{
+    background: linear-gradient(to bottom,#f2f2f2 0px, #dad9d4 100%);
+    
+}
+#menu ul li a{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #999;
+}
+
+/*CONTENIDO*/
+#contenedor{
+    width: 97%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 20px; 
+    margin-bottom: 5px;
+}
+
+/*BARRA LATERAL*/
+#sidebar{
+    float:right;
+    width: 27%;
+    height: auto;
+    color:black;
+}
+
+/*PRINCIPAL*/
+#principal{
+    float: left;
+    width: 66%;
+    height: auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    margin-left: 20px;
+    overflow: hidden;
+    padding: 15px;
+}
+#principal a{
+    color: #333;
+}
+#principal h1{
+    font-size: 35px;
+    color: #444;
+    letter-spacing: 1px;
+    text-shadow:1px 1px 2px #ccc;
+    font-family: "fajala";
+}
+#principal h2{
+    font-size: 25px;
+    colo: #444;
+    letter-spacing: 1px;
+    font-family: "fajala";
+    margin-top: 15px;
+    color: #2979CD;
+    text-shadow:1px 1px 2px #ccc;
+}
+.tituloEntrada{
+    color: #4e4e4e;
+    font-weight: bolder;
+    font-size: 14px
+} 
+#ver-todas a{
+    display: block;
+    border: 1px solid #156785;
+    border-radius: 2px;
+    padding: 20px;
+    color: white;
+    background: #007ee5;
+    cursor: pointer;
+    width: 160px;
+    margin:0px auto;
+    margin-top: 30px;
+}
+/*MAQUETACION DE BLOQUES*/
+.bloque{
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px, 0px, 1px rgba(0,0,0,0.3),
+        0px, 3px, 7px rgba(0,0,0,0.3),
+        inset 0px, 0px, 1px #FFFFFF,
+        inset 0px, -3px, 2px rgba(0,0,0,0.25);
+}
+.bloque h3{
+    margin-bottom: 10px;
+}
+label,
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    display: block;
+    white: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input[type="button"],
+input[type="submit"],
+.boton{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    display: block;
+    border-radius: 5px;
+    color: white;
+    background: #007ee5;
+    border: 1px solid #156785;
+    cursor: pointer;
+    width:78%;
+    font-size: 24px;
+}
+.boton{
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+}
+.boton-naranja{
+    background: orange;
+    border-color:orange;
+}
+.boton-verde{
+    background: green; 
+    border-color: green;
+}
+.boton-rojo{
+    background: red; 
+    border-color: black;
+}
+
+.alert-exito{
+    padding: 5px;
+    text-indent: 5px;
+    font-weight: bold;
+    font-size: 20;
+    color: white;
+    background: green;
+    box-shadow: 0px 1px 5px #ccc;    
+}
+.alert-errores{
+    padding:2px;
+    text-indent: 10px;
+    font-weight: bold;
+    color: red;
+    font-size: 20;
+    text-shadow: 0px 2px 10px #ccc;
+}
+
+/*PIE DE PAGINA*/
+#pie{
+    clear: both;
+    width: 96%;
+    margin: 0px auto;
+    background: linear-gradient(to bottom,#f9f9f9 0px, #e9e9e9 100%);
+    border: 1px solid #c9c9c9;
+    border-bottom: none;
+    border-radius: 8px 8px;
+    color: #666;
+    height: auto;
+    padding: 15px;
+    text-align: center;     
+}
+
+
